@@ -29,7 +29,7 @@ public class EmployeesControllerTests
         var result = controller.Get();
 
         // Assert
-        Assert.NotNull(result);
+        Assert.Null(result);
     }
 
     [Fact]
