@@ -31,10 +31,10 @@ namespace IntegrationProjectSample.Controllers
             var result = _employees.AddEmployee(Name, EmailAddress);
 
             if (result is true) {
-                return Ok(new { Status = "Success", Message = "Employees Added Successfully" });
+                return Ok("User Added Successfully");
             } 
 
-            return BadRequest(new {Status="Failure", Message="Failed Adding Employee"});
+            return BadRequest(false);
         }
 
         // GET api/<EmployeesController>/5
